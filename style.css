@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1f1f1f;
+}
+
+#borda {
+    border: #1a1919;
+    border-style: solid;
+    background: #1a1919;
+    padding: 30px 30px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px black;
+}
+
+#titulo {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 60px;
+    color: rgb(237, 235, 235);
+    background: #181818;
+    border-radius: 25px;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+input{
+    margin: 2px;
+    border: none;
+    border-radius: 80px;
+    text-align: center;
+}
+
+input[type = text]{
+    width: calc(100% - 4px);
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+input[type = button] {
+    cursor: pointer;
+    width: 100px;
+    height: 55px;
+    transition: ease 0.6s;
+}
+
+div#caluladora {
+    background: rgba(0, 0, 0, 0.501);
+    border-radius: 30px;
+    box-shadow: 0 0 20px;
+}
+
+div#caluladora div{
+    display: flex;
+}
+
+div#caluladora div input:nth-child(4){
+    background-color: #9b9b9b;
+}
+
+div#quarta input:nth-child(1){
+    background: #f11c1a;
+    /* border-bottom-left-radius: 35px ; */
+}
+
+div#quarta input:nth-child(3){
+    background: #1a4cf1;
+}
+
+/* div#quarta input:nth-child(4){
+    border-bottom-right-radius: 35px ;
+} */
+
+input[type = button]:hover{
+    filter: brightness(50%);
+}
+
+input[type = button]:active{
+    transform: scale(0.9);
+}
